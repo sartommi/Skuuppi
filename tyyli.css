@@ -1,4 +1,4 @@
-nav {
+.navbar-custom {
     background-color: #DAD7CD;
     padding: 20px;
     font-family: "Montserrat", sans-serif;
@@ -8,17 +8,26 @@ nav {
     text-align: center;
 
 }
+.navbar-custom, .nav-link {
+    text-align: center;
+}
+.navbar-collapse {
+    text-align: center;
+}
 
-nav a {
-    margin: 15px;
+.navbar-custom a {
+    margin: 30px;
     color: #3A5A40;
     text-decoration: none;
 }
-nav a:hover {
-    text-decoration: underline;
+nav a:hover, nav a.sivulla {
+    text-decoration: underline;     /* APUA MITEN SAAN AKTIIVISEN SIVUN ALLEVIIVATUKSI*/
 }
 
-/* APUA MITEN SAAN AKTIIVISEN SIVUN ALLEVIIVATUKSI*/
+.custom-toggler {
+    color: #3A5A40;
+}
+
 
 
 a:visited, a:active {
@@ -27,28 +36,40 @@ a:visited, a:active {
     
 }
 
-.pyorea-kuva {
+/*.pyorea-kuva {
     width:50%;
     float:left;
     margin-left: 10px;
     margin-right: 10px;
 }
 
+.kotisivu {
+    background-color: #DAD7CD;
+    margin-left: 55%;
+    margin-top: 20px;
+
+}
+*/
+
+#teksti {
+    margin-top: 10px;
+}
+
 h1 {
     text-align: center;
     font-family: "Oswald", sans-serif;
-    font-size: 84px;
+    font-size: 64px;
     font-weight: bold;
     font-style: normal;
+    
 }
 
 p {
     margin: 5px;
     margin-top: 20px;
-    background-color: #DAD7CD;
-    margin-left: 57%;
     margin-right: 7%;
     font-size: 20px;
+    font-family: "Montserrat", sans-serif;
 }
 
 main {
@@ -64,22 +85,266 @@ main {
 }
 
 body {
-    background-color: #A3B18A
-    ;
+    background-color: #A3B18A;
 }
 #Logo {
     width: 100px;
     position: absolute;
-    top: 10px;
+    top: 45px;
     left: 30px;
     color: #3A5A40;
 }
 
+.pics {
+    float: right;
+    width: 48%;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.ajankohtaista {
+    float: left;
+    width: 48%;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #DAD7CD;
+}
+
+
+    
+    /*p {
+        clear:all;
+        margin-left: 10px;
+        margin-right: 10px;
+    }*/
+    
+    
+/*h1 {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 84px;
+    font-weight: bold;
+    font-style: normal;
+}*/
+
+
+.ontop {
+    float:inline-start;
+}
+
+
+hr.new5 {
+  border: 10px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.säännöt {
+    background-color: #DAD7CD;
+    border-color: #000;
+    padding-bottom: 5%;
+}
+
+#jatkoa {
+    margin-left: 5%;
+    margin-right: 5%;
+    border-style: groove;
+    border-radius: 5px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+}
+
+/*.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row: t;
+  gap: 20px; 
+  background-color: #A3B18A;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.grid-container > div {
+  background-color: #DAD7CD;
+  color:#000;
+  padding: 10px;
+  text-align: center;
+}
+*/
+
+.row {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+    background-color: #DAD7CD;
+    gap: 10%;
+    text-align: center;
+    
+}
+.row::after {
+    content:"";
+    clear:both;
+    display: block;
+}
+img.kansi {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #3A5A40;
+    color: #DAD7CD;
+    clear: both;
+}
+
+
+
+.pisteitä {
+    border-top: 5px dotted;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.yhteystiedot {
+    background-color: #DAD7CD;
+    margin-top: 5%;
+    padding:10px
+}
+
+.row1 {
+  box-sizing: border-box;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.kolumni {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  position: relative;
+  background-color: #344e41;
+
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.email {
+    margin-bottom: 20px;
+    background-color: #DAD7CD;
+    padding: 15px;
+    margin-left: 7%;
+    border-color: #344e41;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 15px;
+}
+
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #344e41;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #3A5A40;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+ .yhteyttä {
+    background-color: #DAD7CD;
+    padding: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 20px;
+    border-style: ridge;
+ }
+
+
+
 @media (max-width: 800px) {     /*mobiiliin allekkain*/
-    .pyorea-kuva, p {width: 100%;
-    clear:both;}
+    .pyorea-kuva, p, article, #jatkoa {
+        width: 100%;
+        clear: both;
+        border-radius: 5px;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        
+       /* margin-left: 10px;
+        margin-right: 10px;*/
+    }
+    h1 {
+        font-size: 44px;
+    }
+
     p {
+        font-size: 15px;
+       
+    }
+    footer {
+        clear: both;
+    }
+    .ajankohtaista {
+        clear: both;
+        width: 100%;
         margin-left: 10px;
         margin-right: 10px;
     }
+   .pics {
+    clear: both;
+    width: 100%;
+    margin-top: 30px;
+    padding-left: 20%;
+    padding-right: 20%;
+   }
+   .kolumni {
+    float: left;
+    width: 50%;
+   }
+   .email {
+    margin:auto;
+    margin-bottom: 20px;
+
+   }
+   .yhteyttä {
+    margin-left: 20px;
+    margin-right: 20px;
+   }
 }
